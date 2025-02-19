@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header padding-container">
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
@@ -47,26 +47,28 @@
     </header>
     <main>
       <section class="cover">
-        <div class="overlay">
-          <h1 class="cover__title">
-            <span class="aligned-text">Оно</span>
-            <span class="aligned-text_center">тебе</span>
-            <span class="aligned-text_right">надо</span>
-          </h1>
-          <div class="cover__description">
-            <p class="cover__description-text">
-              Аукцион вещей, в которые никто не верил
-            </p>
-            <button class="bet-button">Сделать ставку</button>
-          </div>
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="aligned-text aligned-text__margin">Оно</span>
+          <span class="aligned-text aligned-text__margin aligned-text_center"
+            >тебе</span
+          >
+          <span class="aligned-text aligned-text_right">надо</span>
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item">
-            <a class="card-link card_type_film">
-              <article class="card overlay">
+          <li class="lots__card-list-item card">
+            <a class="card-link card_type card_type_film">
+              <article class="card__content">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -78,9 +80,10 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">
-            <a class="card-link card_type_book">
-              <article class="card overlay">
+          <li class="lots__card-list-item card">
+            <a class="card-link card_type card_type_book">
+              <article class="card__content">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -95,9 +98,10 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">
-            <a class="card-link card_type_picture">
-              <article class="card overlay">
+          <li class="lots__card-list-item card">
+            <a class="card-link card_type card_type_picture">
+              <article class="card__content">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -145,7 +149,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer padding-container">
       <address class="address">
         <a class="address__decoration" href="tel:+99995555555">
           +9 999 555 5555
